@@ -1,0 +1,71 @@
+INICIO MODULO "download_CSV_URL"
+- - - - - - - - - - - - - - - - 
+Descargando CSV
+---------------
+Definiendo la Fecha actual en todos los registros del campo "FECHA_COPIA"
+-------------------------------------------------------------------------
+Dimensiones del dataset: (300, 14)
+-----------------------------------
+Campos con todos sus registros un solo valor único: ['FILTER', 'FORMAT', 'FECHA_COPIA']
+-------------------------------------------------------------------------------------------
+Verificando que no existan registros duplicados
+-----------------------------------------------
+CSV-1 importado exitosamente
+
+
+INICIO MÓDULO "generate_SQL_Connection"
+- - - - - - - - - - - - - - - - - - - -
+Estableciendo conexión a SQL Server
+------------------------------------
+Conexión generada Exitosamente
+
+
+INICIO MÓDULO "generate_SQL_Connection"
+- - - - - - - - - - - - - - - - - - - -
+Estableciendo conexión a SQL Server
+------------------------------------
+Conexión generada Exitosamente
+
+
+INICIO MÓDULO "generate_CSV_SQLServer"
+- - - - - - - - - - - - - - - - - - - -
+Importando Tabla de datos desde SQL Server
+-------------------------------------------
+Transformando tabla en un archivo CSV
+--------------------------------------
+Dimensiones del dataset:(2405, 14)
+-------------------------------------
+Eliminando registros duplicados
+--------------------------------
+CSV-2 importado exitosamente
+
+
+INICIO MÓDULO "datasets_concat"
+- - - - - - - - - - - - - - - -
+Realizando concatenación entre ambos datasets
+---------------------------------------------
+Los dos datasets han sido unidos correctamente
+----------------------------------------------
+Dimensiones del dataset unificado:(2405, 14)
+---------------------------------------------------
+Dataset Ordenado según FECHA_COPIA descendentemente
+---------------------------------------------------
+Verificando que no existan registros duplicados
+-----------------------------------------------
+Unión realizada correctamente
+
+
+INICIO MÓDULO "export_to_msserver"
+- - - - - - - - - - - - - - - - -
+INICIO MÓDULO "generate_SQL_Connection"
+- - - - - - - - - - - - - - - - - - - -
+Estableciendo conexión a SQL Server
+------------------------------------
+Conexión generada Exitosamente
+
+
+Datos eliminados de la Tabla "Testing_ETL.dbo.Unificado"
+-------------------------------------------------------
+Datos del CSV "df_row" insertados correctamente en la Tabla "Testing_ETL.dbo.Unificado" 
+--------------------------------------------------------------------------------------
+Exportación EXITOSA

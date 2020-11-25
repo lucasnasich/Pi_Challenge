@@ -1,0 +1,9 @@
+  Para programar la ejecucion del programa todo los dias Lunes a las 5:00 AM se deben seguir los siguientes pasos:
+
+      A_ Ingresar a la Terminal.
+      B_ Reemplazar en el "Comando_Cron" "PATH DONDE ESTA UBICADA LA CARPETA" por la ruta donde esta ubicada la carpeta "Pi_Data".
+      C_ COPIAR el Comando_Cron y pegarlo en la terminal luego de colocar la ruta indicada anteriormente.
+      D_ Darle enter y listo, el proceso ya se encuentra Programado.
+
+
+  Comando_Cron: 0 5 * * 1 python3 "PATH DONDE ESTA UBICADA LA CARPETA"Pi_Data/pi_challenge.py > "PATH DONDE ESTA UBICADA LA CARPETA"/Pi_Data/pi_challenge`date '+%Y-%m-%d_%H%M%S'`.log
